@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Payoo | Home </title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+ <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <style>
+    *{
+        font-family: "Outfit", sans-serif;
+    }
+ </style>
 </head>
-<body>
-    <h1>This is Payoo Home page</h1>
+<body class="min-h-screen max-w-md bg-base-200 mx-auto">
+    <header class="border-b-2 border-gray-300">
+      <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+          <div class="left flex gap-2">
+            <div class="logo w-[60px]">
+                <img src="assets/Logo.png">
+               
+            </div>
+            <div class="balance-info">
+                <h1 class="text-2xl font-bold ">$<span>45000</span></h1>
+                <p class="text-neutral/50">Available Balance </p>
+            </div>
+
+          </div>
+
+          <div class="right">
+            <a href="index.html" class="btn btn-soft "> 
+                <i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+
+          </div>
+
+      </section>
+
+
+    </header>
+    <section class="w-11/12 mx-auto py-10 space-y-4">
+        <h1 class="text-3xl font-bold">Welcome to Pay<span class="text-primary">oo</span></h1>
+         <p class="text-neutral/50">Enjoy easy and convenient financial services with us.
+             Cashout charge is low and  </p>
+
+             <div class="buttons gap-2 grid grid-cols-3">
+             
+
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft  justify-center gap-2">
+               <img src="assets/opt-1.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">Add Money</span>
+               </button>
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft justify-center gap-2">
+               <img src="assets/opt-2.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">Cashout</span>
+               </button>
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft justify-center gap-2">
+               <img src="assets/opt-3.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">Money Transfer</span>
+               </button>
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft justify-center gap-2">
+               <img src="assets/opt-4.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">Get Bonus</span>
+               </button>
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft justify-center gap-2">
+               <img src="assets/opt-5.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">pay Bill</span>
+               </button>
+                 <button class="btn   flex flex-col p-13 rounded-2xl btn-soft justify-center gap-2">
+               <img src="assets/opt-6.png" class="w-[30px] mx-auto">
+                   <span class="text-neutral/50">transaction</span>
+               </button>
+             </div>
+      </section>
+      <section class="w-11/12 mx-auto py-10">
+        <div>
+            <h1 class="text-2xl font-bold">Add Money</h1>
+        </div>
+          <div class="form pt-15">
+   <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+
+            <label class="label text-neutral font-bold">Select A Bank</label>
+          <input id="select-bank" maxlength="17" minlength="17" type="number"  
+          class="input rounded-full bg-base-200" placeholder="Select bank" />
+          <br>
+          <label class="label text-neutral font-bold ">Mobile Number</label>
+          <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter Your Mobile Number" />
+         <br>
+          <label class="label text-neutral font-bold">4 Digit Pin</label>
+          <input id="input-pin" maxlength="4" minlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Enter 4 digit pin" />
+          
+          <br>
+         
+          <button id="login-btn" class="btn btn-primary rounded-full mt-4">Add Money</button>
+        </fieldset>
+      </div>
+
+    </div>
+    </div>
+
+      </section>
+  
 </body>
 </html>
