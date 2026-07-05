@@ -10,7 +10,7 @@ document.getElementById("login-btn").addEventListener("click", function() {
     }
     else if (contactNumber === "01604908292" && pin === "1234") {
         alert("Login successful!");
-        window.location.replace ("home.html"); // Redirect to dashboard page
+        window.location.replace ("home.html"); 
     }
     else{
         alert("Given mobile number and pin is not valid. Please try again.");
